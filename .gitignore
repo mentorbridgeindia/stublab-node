@@ -1,0 +1,16 @@
+out/
+# TS -incremental file
+tsconfig.tsbuildinfo
+node_modules
+bin
+.vscode/
+.idea/
+.DS_Store
+target/
+.yarn/
+
+# Mongo DB
+.env.local
+.env.development
+.env.production
+

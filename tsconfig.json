@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "ES2020",
+    "module": "commonjs",
+    "outDir": "bin",
+    "rootDir": ".",
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "checkJs": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "types": ["node"],
+    "lib": ["es6"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowUnreachableCode": true,
+    "useUnknownInCatchVariables": false
+  },
+  "include": ["app/**/*.ts", "app/**/*.js"],
+  "exclude": ["node_modules", "<node_internals>/**"]
+}
