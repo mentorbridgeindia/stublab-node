@@ -3,7 +3,7 @@
     "jsx": "react-jsx",
     "target": "ES2020",
     "module": "commonjs",
-    "outDir": "bin",
+    "outDir": "./dist",
     "rootDir": ".",
     "strict": true,
     "noImplicitAny": false,
@@ -19,6 +19,6 @@
     "allowUnreachableCode": true,
     "useUnknownInCatchVariables": false
   },
-  "include": ["app/**/*.ts", "app/**/*.js"],
+  "include": ["index.ts", "app/**/*.ts", "app/**/*.js"],
   "exclude": ["node_modules", "<node_internals>/**"]
 }

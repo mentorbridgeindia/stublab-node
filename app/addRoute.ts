@@ -3,7 +3,7 @@ import { setupDynamicRoutes } from "./dynamicRoutes";
 import { Route } from "./route.types";
 
 export const setupAddRoute = (app: Express) => {
-  app.post("/add-route", (req: Request, res: Response) => {
+  app.post("/api/add-route", (req: Request, res: Response) => {
     const newRoute = req.body as Route;
 
     // TODO: Validate the new route
