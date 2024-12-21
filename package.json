@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node-dev index.ts",
-    "build": "ts-node-dev index.ts"
+    "build": "tsc"
   },
   "keywords": [
     "node"
@@ -15,8 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.3",
-    "express": "^4.21.2",
-    "tsc": "^2.0.4"
+    "express": "^4.21.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",

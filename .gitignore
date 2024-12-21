@@ -8,6 +8,8 @@ bin
 .DS_Store
 target/
 .yarn/
+public/
+
 
 # Mongo DB
 .env.local

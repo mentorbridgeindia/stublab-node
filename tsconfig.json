@@ -3,7 +3,7 @@
     "jsx": "react-jsx",
     "target": "ES2020",
     "module": "commonjs",
-    "outDir": "./dist",
+    "outDir": "./public",
     "rootDir": ".",
     "strict": true,
     "noImplicitAny": false,
