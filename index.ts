@@ -3,7 +3,6 @@ const app = express();
 import bodyParser from "body-parser";
 import { setupAddRoute } from "./app/addRoute";
 import { setupDynamicRoutes } from "./app/dynamicRoutes";
-import { routesConfig } from "./app/routes";
 
 app.use(bodyParser.json());
 
@@ -11,7 +10,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
-setupDynamicRoutes(app, routesConfig);
+setupDynamicRoutes(app);
 setupAddRoute(app);
 
 app.get("/", (req, res) => {

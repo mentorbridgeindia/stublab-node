@@ -1,13 +1,13 @@
 import { Express } from "express";
 import { deleteMethod } from "./deleteMethod";
 import { getMethod } from "./getMethod";
+import { getRoutes } from "./getRoutes";
 import { postMethod } from "./postMethod";
 import { putMethod } from "./putMethod";
 import { Route } from "./route.types";
 
-export const setupDynamicRoutes = (app: Express, routesConfig: Route[]) => {
-  // Fetch routes from Mongo DB
-  routesConfig.forEach((route: Route) => {
+export const setupDynamicRoutes = (app: Express) => {
+  getRoutes().forEach((route: Route) => {
     const { path, method, response } = route;
 
     switch (method) {
