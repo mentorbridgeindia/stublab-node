@@ -19,6 +19,6 @@
     "allowUnreachableCode": true,
     "useUnknownInCatchVariables": false
   },
-  "include": ["index.ts", "app/**/*.ts", "app/**/*.js"],
+  "include": ["index.ts", "api/**/*.ts", "api/**/*.js"],
   "exclude": ["node_modules", "<node_internals>/**"]
 }

@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
 import bodyParser from "body-parser";
-import { setupAddRoute } from "./app/addRoute";
-import { setupDynamicRoutes } from "./app/dynamicRoutes";
+import { setupAddRoute } from "./api/addRoute";
+import { setupDefaultRoute } from "./api/defaultRoute";
+import { setupDynamicRoutes } from "./api/dynamicRoutes";
 
 app.use(bodyParser.json());
 
@@ -12,10 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 setupDynamicRoutes(app);
 setupAddRoute(app);
-
-app.get("/", (req, res) => {
-  res.send("Hello world!");
-});
+setupDefaultRoute(app);
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
