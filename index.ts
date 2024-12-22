@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-import bodyParser from "body-parser";
+import * as bodyParser from "body-parser";
 import { setupAddRoute } from "./api/addRoute";
 import { setupDefaultRoute } from "./api/defaultRoute";
 import { setupDynamicRoutes } from "./api/dynamicRoutes";
@@ -8,6 +8,8 @@ import { setupDynamicRoutes } from "./api/dynamicRoutes";
 app.use(bodyParser.json());
 
 app.use(express.json());
+
+app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: true }));
 
