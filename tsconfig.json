@@ -14,7 +14,6 @@
     "moduleResolution": "node",
     "types": ["node"],
     "lib": ["es6"],
-    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "allowUnreachableCode": true,
