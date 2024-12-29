@@ -11,7 +11,6 @@ const port = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,});
 
@@ -19,7 +18,7 @@ app.post("/api/generate", async (req, res) => {
   try {
     const { prompt } = req.body; 
     const completion = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4o-mini",
       messages: [
         { role: "user", content: prompt },
       ],
